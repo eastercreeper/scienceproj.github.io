@@ -1,0 +1,275 @@
+	<!doctype html>
+	<html>
+	<head>
+	<script src="pages/js/animatedtitle.js"></script>
+	<script src="pages/js/jparticles.js"></script>
+    <script src="pages/js/particle.js"></script>
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Renewable Wind Power" />
+	<meta property="og:image" content="assets/avatar.png" />
+	<meta name="twitter:description" content="Wind Power" />
+	
+	<link rel="shortcut icon" type="image/x-icon" href="pages/assets/favicon.ico">
+	<style>
+		html {
+  scroll-behavior: smooth;
+}
+		@font-face {
+			font-family: "Roboto";
+			font-style: normal;
+			font-weight: 400;
+			src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v15/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+		}
+		html {
+			color: #ffffff;
+			height: 100%;
+			background-image: url("assets/wp2100354-wind-energy-wallpapers.jpg");
+			background-position: center;
+			background-size: cover;
+  			background-repeat: no-repeat;			
+			animation-name: fadein;
+			animation-duration: 1s;
+			font-family: roboto;
+		}
+		.center {
+			border-radius: 5%;
+			background-color: #000000a0;
+			padding: 20px;
+			position: absolute;
+			margin: auto;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			animation-name: fadein;
+			animation-duration: 1s;
+		}
+		.center2 {
+			
+			position: absolute;
+			margin: auto;
+			left: 50%;
+			top: 17%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			animation-name: fadein;
+			animation-duration: 1s;
+		}
+			.center3 {
+			text-align: center;
+			animation-name: fadein;
+			animation-duration: 1s;
+		}
+		.center4 {
+			border-radius: 5%;
+			background-color: #000000a0;
+			padding: 20px;
+			margin: auto;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			animation-name: fadein;
+			animation-duration: 1s;
+			display: inline-block;
+  			font-size: 22px;
+			margin-top: 10px;
+			margin-left: 20px;
+		}
+		.right {
+			float: right;
+			text-align: right;
+		}
+		.img {
+			border-radius: 60%;
+			width: 150px;
+			height: 150px;
+			animation-name: imgpopout;
+			animation-duration: 1s;
+		}
+		p {
+			margin: 0px;
+			padding: 0px;
+		}
+		div { cursor: default; }
+		a { color: #9e09e8; }
+		.center hr {
+			width: 100%;
+			animation-name: flowout;
+			animation-duration: 2s;
+		}
+		hr { color: #FFFFFF; }
+		div:hover, a:hover { text-shadow: 0px 0px 8px; }
+		@keyframes fadein {
+			0% { opacity: 0%; }
+			100% { opacity: 100%; }
+		}
+		@keyframes flowout {
+			0% { width: 0%; }
+			100% { width: 100%; }
+		}
+		@keyframes imgpopout {
+			0% {
+				width: 0px;
+				height: 0px;
+			}
+			100% {
+				width: 150px;
+				height: 150px;
+			}
+		}
+		* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.navbar {
+  font-size: 18px;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+	animation-name: fadein;
+			animation-duration: 1s;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+	animation-name: fadein;
+			animation-duration: 1s;
+}
+
+.nav-links,
+.logo {
+  	text-decoration: none;
+  	color: rgba(255, 255, 255, 0.7);
+	animation-name: fadein;
+	animation-duration: 1s;
+}
+
+.main-nav li {
+  	text-align: center;
+  	margin: 15px auto;
+	animation-name: fadein;
+	animation-duration: 1s;
+}
+
+.logo {
+  	display: inline-block;
+  	font-size: 22px;
+  	margin-top: 10px;
+  	margin-left: 20px;
+	animation-name: fadein;
+	animation-duration: 1s;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+	animation-name: fadein;
+
+			animation-duration: 1s;
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+	  animation-name: fadein;
+			animation-duration: 1s;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+	  animation-name: fadein;
+			animation-duration: 1s;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+	</style>
+<script>
+	
+
+let mainNav = document.getElementById("js-menu");
+let navBarToggle = document.getElementById("js-navbar-toggle");
+
+navBarToggle.addEventListener("click", function() {
+  mainNav.classList.toggle("active");
+});
+
+</script>
+		
+		<link rel="stylesheet" href="pages/navbar.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+		
+</head>
+
+
+<body>
+		<nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+    <a href="#" class="logo">Wind Power</a>
+    <ul class="main-nav" id="js-menu">
+      <li>
+        <a href="index.html" class="nav-links">Home</a>
+      </li>
+      <li>
+        <a href="video.html" class="nav-links">Video</a>
+      </li>
+      <li>
+        <a href="impacts.html" class="nav-links">Sources</a>
+      </li>
+    </ul>
+  </nav>
+	<center>
+	<video width="400"  controls>
+  <source src="assets/video.mp4" type="video/mp4">
+  Your browser does not support HTML video.
+</video>
+		</center>
+</body>
+</html>
